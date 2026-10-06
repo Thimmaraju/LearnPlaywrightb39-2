@@ -31,7 +31,7 @@ export default defineConfig({
     timeout: 20000,  //5 sec
   },
 
-  globalTimeout: 2*60*60000,
+  globalTimeout: 1*60*60000,
   reporter: [["html"], ['json', { outputFile: 'results.json' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
