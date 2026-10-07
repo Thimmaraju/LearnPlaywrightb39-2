@@ -10,6 +10,8 @@ test('Verify login with Valid credentials', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
   await page.getByRole('textbox', { name: 'Password' }).click();
   await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
+
+  await page.waitForTimeout(15000)
   await page.getByRole('button', { name: 'Login' }).click();
 
   // assertions 
