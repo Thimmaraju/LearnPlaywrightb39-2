@@ -68,10 +68,3 @@ test('Verify launching book my show', async ({ page }) => {
 })
 
 
-
-test('Verify launching flipkart', async ({ page }) => {
-
-  await page.goto('http://localhost:3000/')
-
-})
-
