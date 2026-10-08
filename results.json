@@ -1,6 +1,14 @@
 {
   "config": {
-    "argv": [],
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\LearnPlaywrightB39\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/demoqa.spec.js",
+      "--project=chromium",
+      "--headed",
+      "--debug"
+    ],
     "configFile": "D:\\LearnPlaywrightB39\\playwright.config.js",
     "rootDir": "D:/LearnPlaywrightB39/tests",
     "failOnFlakyTests": false,
@@ -8,10 +16,10 @@
     "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
-    "globalTimeout": 3600000,
+    "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 0,
+    "maxFailures": 1,
     "metadata": {
       "actualWorkers": 1
     },
@@ -20,7 +28,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -31,12 +39,12 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 45000
+        "timeout": 0
       },
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -47,12 +55,12 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 45000
+        "timeout": 0
       },
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -63,7 +71,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 45000
+        "timeout": 0
       }
     ],
     "quiet": false,
@@ -86,46 +94,46 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.63.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "admin\\addjobcategories.spec.js",
-      "file": "admin/addjobcategories.spec.js",
+      "title": "demoqa.spec.js",
+      "file": "demoqa.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify add job catagories ",
+          "title": "Verify Working with Edit boxes",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 45000,
+              "timeout": 0,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 24649,
+                  "duration": 42822,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T05:23:34.557Z",
+                  "startTime": "2026-10-08T04:43:33.510Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\admin-addjobcategories-verify-add-job-catagories--chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB39\\test-results\\demoqa-Verify-Working-with-Edit-boxes-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -133,9 +141,9 @@
               "status": "expected"
             }
           ],
-          "id": "caa4e0f683df66fdb791-74ec026a9b6ccef07743",
-          "file": "admin/addjobcategories.spec.js",
-          "line": 4,
+          "id": "f6d95a3632ad4f8e3ac8-433fc6242d3fbe44355c",
+          "file": "demoqa.spec.js",
+          "line": 6,
           "column": 5
         }
       ]
@@ -143,8 +151,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-07T05:23:32.230Z",
-    "duration": 27239.012999999977,
+    "startTime": "2026-10-08T04:43:32.966Z",
+    "duration": 44849.399000000005,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
