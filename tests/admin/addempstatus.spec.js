@@ -11,7 +11,7 @@ test('Verify an Admin can add employeement status', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
   await page.getByRole('link', { name: 'Admin' }).click();
   await page.getByText('Job').click();
-  await page.getByRole('menuitem', { name: 'Employment Status' }).click();
+  await page.getByRole('menuitem', { name: 'Employment Status' }).click();kejerghiuerbh
   await page.getByRole('button', { name: ' Add' }).click();
   await page.locator('form').getByRole('textbox').click();
   await page.locator('form').getByRole('textbox').fill('Fulltime permanent');
