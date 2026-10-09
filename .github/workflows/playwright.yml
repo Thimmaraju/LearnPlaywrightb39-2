@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main, master ]
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '30 22 * * 5'
 jobs:
   test:
     environment: QA
@@ -21,7 +21,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test --project=chromium
+      run: npx playwright test
       env:
         APP_USERNAME: ${{ secrets.APP_USERNAME }}
         APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
