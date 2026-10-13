@@ -68,3 +68,15 @@ test('Verify launching book my show', async ({ page }) => {
 })
 
 
+
+test('Verify login with invalid username and invalid password - dummy', async ({ page }) => {
+    // actions 
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+  await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
+  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
+  await page.getByRole('button', { name: 'Login' }).click();
+
+  await page.locator('//a[@href="/web/index.php/pim/viewPimModule"]').click()
+});
+
+
