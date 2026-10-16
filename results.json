@@ -93,13 +93,13 @@
   },
   "suites": [
     {
-      "title": "locatorsparams.spec.js",
-      "file": "locatorsparams.spec.js",
+      "title": "PIM\\addemployee.spec.js",
+      "file": "PIM/addemployee.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify add to cart",
+          "title": "Verify Admin can employee",
           "ok": true,
           "tags": [],
           "tests": [
@@ -111,21 +111,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4488,
+                  "duration": 12920,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-13T04:38:17.185Z",
+                  "startTime": "2026-10-16T03:40:45.811Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\locatorsparams-Verify-add-to-cart-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB39\\test-results\\PIM-addemployee-Verify-Admin-can-employee-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -133,9 +133,9 @@
               "status": "expected"
             }
           ],
-          "id": "cbe6a426c8c0a19ec58f-61ff4e6a8e4971b8b5a6",
-          "file": "locatorsparams.spec.js",
-          "line": 4,
+          "id": "ec552fad52c4a8fd0817-638c76659d17f5671671",
+          "file": "PIM/addemployee.spec.js",
+          "line": 7,
           "column": 5
         }
       ]
@@ -143,8 +143,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-13T04:38:15.490Z",
-    "duration": 6572.821999999986,
+    "startTime": "2026-10-16T03:40:43.403Z",
+    "duration": 15660.676999999996,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

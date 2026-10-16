@@ -41,6 +41,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
 
+    testIdAttribute:"data-dbsqaid",
     baseURL: "https://opensource-demo.orangehrmlive.com",
     trace: "retain-on-failure",
     screenshot: "on",

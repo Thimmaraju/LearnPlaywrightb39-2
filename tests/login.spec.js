@@ -5,13 +5,17 @@ import logindata from "../testdata/login.json"
 test('Verify login with Valid credentials', async ({ page }) => {
 
   // actions 
+
+  //Launch the Url
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-  await page.getByRole('textbox', { name: 'Username' }).click();
+ 
+  //Enter username 
   await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
-  await page.getByRole('textbox', { name: 'Password' }).click();
+  
+  //Enter Password 
   await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
 
-  await page.waitForTimeout(15000)
+  //click on login 
   await page.getByRole('button', { name: 'Login' }).click();
 
   // assertions 
