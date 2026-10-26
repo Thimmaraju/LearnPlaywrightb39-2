@@ -93,13 +93,13 @@
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "conditionaltesting.spec.js",
+      "file": "conditionaltesting.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify login with invalid username and invalid password",
+          "title": "click on gallery if it visible",
           "ok": true,
           "tags": [],
           "tests": [
@@ -111,21 +111,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8834,
+                  "duration": 3738,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-21T05:23:17.898Z",
+                  "startTime": "2026-10-26T05:23:44.880Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\login-Verify-login-with-in-1ecba-ername-and-invalid-password-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB39\\test-results\\conditionaltesting-click-on-gallery-if-it-visible-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -133,9 +133,9 @@
               "status": "expected"
             }
           ],
-          "id": "badc1754af1944f68b2b-0a1ea42f3163c8b2d8ee",
-          "file": "login.spec.js",
-          "line": 49,
+          "id": "755c260cb58bb34020f9-daccead92205ff94dd06",
+          "file": "conditionaltesting.spec.js",
+          "line": 3,
           "column": 5
         }
       ]
@@ -143,8 +143,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-21T05:23:13.974Z",
-    "duration": 13138.139999999985,
+    "startTime": "2026-10-26T05:23:43.111Z",
+    "duration": 5776.195999999996,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
