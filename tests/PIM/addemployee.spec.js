@@ -4,6 +4,12 @@ import logindata from "../../testdata/login.json"
 
 import { faker } from '@faker-js/faker';
 
+const employee ={
+
+    firstname : "Raju",
+    lastname : "G"
+}
+
 test('Verify Admin can employee', async ({ page }) => {
   
   await page.goto('/web/index.php/auth/login');
@@ -12,7 +18,7 @@ test('Verify Admin can employee', async ({ page }) => {
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('link', { name: 'PIM' }).click();
   await page.getByRole('link', { name: 'Add Employee' }).click();
-  await page.getByRole('textbox', { name: 'First Name' }).fill(faker.person.firstName());
+  await page.getByRole('textbox', { name: 'First Name' }).fill(employee.firstname);
   await page.getByRole('textbox', { name: 'Last Name' }).fill(faker.person.lastName());
   //await page.getByRole('textbox').nth(4).click();
  // await page.getByRole('textbox').nth(4).fill('0388ty');  

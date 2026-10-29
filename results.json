@@ -125,13 +125,13 @@
   },
   "suites": [
     {
-      "title": "loopingtests.spec.js",
-      "file": "loopingtests.spec.js",
+      "title": "arrayexample2.spec.js",
+      "file": "arrayexample2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify login with Valid credentials -1 ",
+          "title": "Verify login with Valid credentials",
           "ok": true,
           "tags": [],
           "tests": [
@@ -143,401 +143,48 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14512,
+                  "duration": 13738,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Username : Admin\n"
+                    },
+                    {
+                      "text": "Admin\n"
+                    },
+                    {
+                      "text": "Password : admin123\n"
+                    },
+                    {
+                      "text": "admin123\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-27T05:13:09.057Z",
+                  "startTime": "2026-10-29T05:09:08.340Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--1--chromium\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "33d9c044f955e7f8ff12-7d48add3650bdea47c21",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -2 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10656,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:13:23.826Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--2--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-e5c30241c317fc056a35",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -3 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11024,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:13:34.545Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--3--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-35b0f6cb188d8f580ea6",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -4 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 9433,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:13:45.589Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--4--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-858854d9361486972a9c",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -5 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10142,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:13:55.060Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--5--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-6db53b99f4063c6e28e4",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -6 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11198,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:14:05.243Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--6--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-d67b9050440e15ed1adf",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -7 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8677,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:14:16.489Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--7--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-2fce8f8131594aa717dc",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -8 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7430,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:14:25.199Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--8--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-f63641d4450632de1511",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -9 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8384,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:14:32.680Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--9--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-6be04cd9a5e45b1ccf85",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
-        },
-        {
-          "title": "Verify login with Valid credentials -10 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8385,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-27T05:14:41.089Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\loopingtests-Verify-login-with-Valid-credentials--10--chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "33d9c044f955e7f8ff12-bae847e44f8e762e9b42",
-          "file": "loopingtests.spec.js",
-          "line": 8,
-          "column": 9
+          "id": "3fadc5b8714326ba5d04-0634471171e5188cced6",
+          "file": "arrayexample2.spec.js",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-27T05:13:06.557Z",
-    "duration": 103050.23599999999,
-    "expected": 10,
+    "startTime": "2026-10-29T05:09:05.850Z",
+    "duration": 16643.62599999993,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
