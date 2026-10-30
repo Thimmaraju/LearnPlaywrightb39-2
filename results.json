@@ -125,14 +125,14 @@
   },
   "suites": [
     {
-      "title": "arrayexample2.spec.js",
-      "file": "arrayexample2.spec.js",
+      "title": "admin\\addjobtitle.spec.js",
+      "file": "admin/addjobtitle.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify login with Valid credentials",
-          "ok": true,
+          "title": "Verify Admin can add job title",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -143,38 +143,98 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 13738,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 45318,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB39\\tests\\admin\\addjobtitle.spec.js",
+                        "column": 14,
+                        "line": 53
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 45000ms exceeded.\nCall log:\n\u001b[2m  - operation was aborted: Test timeout of 45000ms exceeded.\u001b[22m\n\n\n\u001b[0m \u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Type description here'\u001b[39m })\u001b[33m.\u001b[39mfill(description)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'Step 16: Click the notes field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'textbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Add note'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'Step 17: Enter the notes'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB39\\tests\\admin\\addjobtitle.spec.js:53:14\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "Username : Admin\n"
+                      "text": "Step 1: Navigate to the OrangeHRM login page\n"
                     },
                     {
-                      "text": "Admin\n"
+                      "text": "Step 2: Click the Username field\n"
                     },
                     {
-                      "text": "Password : admin123\n"
+                      "text": "Step 3: Enter the username\n"
                     },
                     {
-                      "text": "admin123\n"
+                      "text": "Step 4: Click the Password field\n"
+                    },
+                    {
+                      "text": "Step 5: Enter the password\n"
+                    },
+                    {
+                      "text": "Step 6: Click Login\n"
+                    },
+                    {
+                      "text": "Step 7: Verify the dashboard is visible\n"
+                    },
+                    {
+                      "text": "Step 8: Open the Admin section\n"
+                    },
+                    {
+                      "text": "Step 9: Open the Job menu\n"
+                    },
+                    {
+                      "text": "Step 10: Open Job Titles\n"
+                    },
+                    {
+                      "text": "Step 11: Click Add\n"
+                    },
+                    {
+                      "text": "Step 12: Click the job title field\n"
+                    },
+                    {
+                      "text": "Step 13: Enter the job title\n"
+                    },
+                    {
+                      "text": "Step 14: Click the description field\n"
+                    },
+                    {
+                      "text": "Step 15: Enter the job description\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-29T05:09:08.340Z",
+                  "startTime": "2026-10-30T05:28:15.112Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB39\\test-results\\admin-addjobtitle-Verify-Admin-can-add-job-title-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB39\\test-results\\admin-addjobtitle-Verify-Admin-can-add-job-title-chromium\\error-context.md"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "3fadc5b8714326ba5d04-0634471171e5188cced6",
-          "file": "arrayexample2.spec.js",
-          "line": 3,
+          "id": "f5b1bc4c1971ae9939ad-438724610e66820d0fca",
+          "file": "admin/addjobtitle.spec.js",
+          "line": 7,
           "column": 5
         }
       ]
@@ -182,11 +242,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-29T05:09:05.850Z",
-    "duration": 16643.62599999993,
-    "expected": 1,
+    "startTime": "2026-10-30T05:28:11.822Z",
+    "duration": 49010.12,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -46,7 +46,11 @@ test('Verify Admin can add job title', async ({ page }) => {
   console.log('Step 14: Click the description field');
   await page.getByRole('textbox', { name: 'Type description here' }).click();
   console.log('Step 15: Enter the job description');
-  await page.getByRole('textbox', { name: 'Type description here' }).fill('Automation testing');
+  const description = "Understing requirement\nwriting script\nMaintain automation script"
+
+  await page.getByRole('textbox', { name: 'Type description here' }).fill(description);
+
+  await page.waitForTimeout(10000)
   console.log('Step 16: Click the notes field');
   await page.getByRole('textbox', { name: 'Add note' }).click();
   console.log('Step 17: Enter the notes');
