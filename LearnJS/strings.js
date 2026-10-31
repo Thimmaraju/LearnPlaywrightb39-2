@@ -82,14 +82,43 @@ str6.includes("Java")  //false
 
 // slice()
 
-// splice()
+// splice()    
 
 console.log("Raju" + "G")
 
 console.log("Raju".concat("G"))
 
-description = "Understing requirement\nwriting script\nMaintain automation script"
+description = "Understing requirement\twriting script\tMaintain automation script"
 
 // .fill(description)
 
 console.log(description)
+
+//strings Immutable 
+
+arr = ["bhavya", "kavya", "shashank", "durga"]
+
+arr[2] = "aruna"
+
+console.log(arr)
+
+str5 = "Javakcript"
+
+str5[4] = "S"
+
+console.log(str5)
+
+str = "raju"
+
+arr = str.split("")
+
+console.log(arr)
+
+//join("")
+//str = new String("raju") //raju typeof object 
+
+arr = [ 'r', 'a', 'j', 'u' ]
+
+str7 = arr.join("")
+
+console.log(str7)

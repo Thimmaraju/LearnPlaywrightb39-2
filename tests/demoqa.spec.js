@@ -4,6 +4,7 @@ import { test, expect } from '@playwright/test';
 import details from "../testdata/demoqa.json"
 import sampledata from "../testdata/sampledata.js"
 
+import {randomEmail} from "../utils/datautilities.js"
 const { fullname, email_id, p_address, c_address } = sampledata
 
 test('Verify Working with Edit boxes', async ({ page }) => {
@@ -85,7 +86,7 @@ const data = ["Raju g", "1234", "xyz@gmail.com", "pune", "mumbai"]
     // Actions 
     await page.goto('https://demoqa.com/text-box')
     await page.getByRole('textbox', { name: 'Full Name' }).fill(data[0])
-    await page.getByRole('textbox', { name: 'name@example.com' }).pressSequentially(data[2])
+    await page.getByRole('textbox', { name: 'name@example.com' }).pressSequentially(randomEmail())
     await page.getByRole('textbox', { name: 'Current Address' }).fill(data[2])
     await page.locator('#permanentAddress').fill(data[3])
     await page.getByRole('button', { name: 'Submit' }).click()

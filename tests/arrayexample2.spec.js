@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Verify login with Valid credentials', async ({ page }) => {
+test('Verify login with Valid credentials', async function ({ page }) {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -32,3 +32,12 @@ test('Verify login with Valid credentials', async ({ page }) => {
 
 
 })
+
+// test("testtitle", function )
+
+test("Verify login",function () {
+
+    console.log("Bavya")
+}  )
+
+
