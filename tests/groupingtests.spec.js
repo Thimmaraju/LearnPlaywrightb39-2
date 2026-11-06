@@ -7,7 +7,7 @@ test.describe("group 1", () => {
 
     test("test case 1", () => {
 
-        test.fail()
+        test.fixme()
 
 
         console.log("This is test case 1")
