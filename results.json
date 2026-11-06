@@ -1,6 +1,12 @@
 {
   "config": {
-    "argv": [],
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\LearnPlaywrightB39\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/sampletest.spec.js",
+      "--project=chromium"
+    ],
     "configFile": "D:\\LearnPlaywrightB39\\playwright.config.js",
     "rootDir": "D:/LearnPlaywrightB39/tests",
     "failOnFlakyTests": false,
@@ -20,7 +26,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -36,7 +42,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -52,7 +58,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -68,7 +74,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -84,7 +90,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB39/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 1
         },
@@ -118,15 +124,15 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.63.0",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "arrayexample2.spec.js",
-      "file": "arrayexample2.spec.js",
+      "title": "sampletest.spec.js",
+      "file": "sampletest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
@@ -143,44 +149,38 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7529,
+                  "duration": 5,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Username : Admin\n"
+                      "text": "Raju\n"
                     },
                     {
-                      "text": "Admin\n"
+                      "text": "Raju\n"
                     },
                     {
-                      "text": "Password : admin123\n"
+                      "text": "Shashank\n"
                     },
                     {
-                      "text": "admin123\n"
+                      "text": "Bhavya\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-31T05:20:32.339Z",
+                  "startTime": "2026-11-04T04:44:03.386Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB39\\test-results\\arrayexample2-Verify-login-with-Valid-credentials-chromium\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "3fadc5b8714326ba5d04-0634471171e5188cced6",
-          "file": "arrayexample2.spec.js",
-          "line": 3,
+          "id": "8d57d494faf716aa8dfc-d9b70a96c1c66130c54a",
+          "file": "sampletest.spec.js",
+          "line": 27,
           "column": 5
         }
       ]
@@ -188,8 +188,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-31T05:20:30.440Z",
-    "duration": 11365.866999999998,
+    "startTime": "2026-11-04T04:44:02.672Z",
+    "duration": 866.419,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
