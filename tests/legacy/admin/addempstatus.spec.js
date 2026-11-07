@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import logindata from  "../../testdata/login.json"
+import logindata from  "../../../testdata/login.json"
 
 test('Verify an Admin can add employeement status', async ({ page }) => {
   await page.goto('/web/index.php/auth/login');

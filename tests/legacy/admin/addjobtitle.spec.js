@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-import data from "../../testdata/login.json"
+import data from "../../../testdata/login.json"
 
 import { faker } from '@faker-js/faker';
 
-test('Verify Admin can add job title', async ({ page }) => {
+test('Verify Admin can add job title',{tag: "@smoke"}, async ({ page }) => {
   console.log('Step 1: Navigate to the OrangeHRM login page');
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 

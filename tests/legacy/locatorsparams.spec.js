@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import vegitablenames from "../testdata/vegitables.json"
+import vegitablenames from "../../testdata/vegitables.json"
 test('Verify add to cart', async ({ page }) => {
 
 

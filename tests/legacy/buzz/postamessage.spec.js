@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import logindata from "../../testdata/login.json"
-import postdata from "../../testdata/buzz/buzzpost.json"
+import logindata from "../../../testdata/login.json"
+import postdata from "../../../testdata/buzz/buzzpost.json"
 
-test('Verify User can post a message', async ({ page }) => {
+test('Verify User can post a message',{tag: "@smoke"}, async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).fill(logindata.username);

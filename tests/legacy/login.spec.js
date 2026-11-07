@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-import logindata from "../testdata/login.json"
+import logindata from "../../testdata/login.json"
 
-test.beforeEach(async ({apge})=>{
+test.beforeEach(async ({page})=>{
 
   
     //Launch the Url
@@ -10,9 +10,9 @@ test.beforeEach(async ({apge})=>{
 
 })
 
-test.describe("Login tests", () => {
+test.describe("Login tests",{tag: "@smoke"}, () => {
 
-  test('Verify login with Valid credentials', async ({ page }) => {
+  test('Verify login with Valid credentials', {tag: "@smoke"}, async ({ page }) => {
 
     test.slow()
 
@@ -25,7 +25,7 @@ test.describe("Login tests", () => {
     await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
 
     //click on login 
-    await page.getByRole('button', { name: 'Raju' }).click();
+    await page.getByRole('button', { name: 'Login' }).click();
 
     // assertions 
     await expect(page.getByText('Time at Work')).toBeVisible();  // 5sec 

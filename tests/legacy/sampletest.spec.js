@@ -24,7 +24,7 @@ import { test, expect } from '@playwright/test';
 
 }
 
-test(`Verify login with Valid credentials`,async  function (){
+test(`Verify login with Valid credentials`, {tag: "@payment"},async  function (){
     
     console.log("Raju")
 

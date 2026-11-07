@@ -1,10 +1,10 @@
 
 import { test, expect } from '@playwright/test';
 
-import details from "../testdata/demoqa.json"
-import sampledata from "../testdata/sampledata.js"
+import details from "../../testdata/demoqa.json"
+import sampledata from "../../testdata/sampledata.js"
 
-import {randomEmail} from "../utils/datautilities.js"
+import {randomEmail} from "../../utils/datautilities.js"
 const { fullname, email_id, p_address, c_address } = sampledata
 
 test('Verify Working with Edit boxes', async ({ page }) => {
