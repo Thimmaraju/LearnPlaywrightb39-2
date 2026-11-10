@@ -14,7 +14,9 @@ test('Verify login with Valid credentials', async function ({ page }) {
 
     console.log(username)
 
-    const passwordtext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[2]').textContent()
+    //const passwordtext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[2]').textContent()
+
+    const passwordtext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[2]').innerText()
 
     console.log(passwordtext)
 
