@@ -60,13 +60,13 @@ test.describe('Automation - Working With Elements', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-              page.locator('//a[@href="download/upexlogo.png"]').click()
+              page.locator('//a[@href="download/sample.pdf"]').click()
         ]);
 
         const suggestedFileName = download.suggestedFilename()
         const filePath = 'downloads/' + suggestedFileName
         await download.saveAs(filePath)
-        expect(fs.existsSync(filePath)).toBeTruthy() // whether file is downloaded or not 
+       expect(fs.existsSync(filePath)).toBeTruthy() // whether file is downloaded or not 
 
         //export files 
     })

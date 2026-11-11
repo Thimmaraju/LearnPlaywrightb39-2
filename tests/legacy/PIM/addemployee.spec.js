@@ -23,8 +23,10 @@ test('Verify Admin can employee', async ({ page }) => {
   //await page.getByRole('textbox').nth(4).click();
  // await page.getByRole('textbox').nth(4).fill('0388ty');  
   await page.getByRole('button', { name: 'Save' }).click();
+
+  await expect(page.locator("//p[text()='Successfully Saved']")).toBeVisible()
   //await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/189');
-  await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();  // 5sec 
+  //await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();  // 5sec 
 
  // await page.close()
 });

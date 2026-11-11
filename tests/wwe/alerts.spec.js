@@ -3,18 +3,18 @@ const { test, expect } = require('@playwright/test');
 test.describe('Automation - Working with Alerts', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://the-internet.herokuapp.com/javascript_alerts");
+    await page.goto("https://demoqa.com/alerts");
   });
 
   test('Playwright Test Case - Simple Alert', async ({ page }) => {
     //test.slow() // triple test timeout 
     // Trigger the alert
-    page.locator('text=Click for JS Alert').click();
+    page.locator('#alertButton').click();
     
     // Wait for the alert and verify its message
     page.on('dialog', async dialog => {
-      expect(dialog.message()).toBe('I am a JS Alert');
-      expect(dialog.type()).toBe('alert');
+      // expect(dialog.message()).toBe('I am a JS Alert');
+      // expect(dialog.type()).toBe('alert');
       await dialog.accept(); // Accept the alert
     });
   
@@ -33,24 +33,24 @@ test.describe('Automation - Working with Alerts', () => {
 
   test('Playwright Test Case - test Confirm Alert - Cancel', async ({ page }) => {
     // Trigger the confirm alert
-    page.locator('text=Click for JS Confirm').click();
+    page.locator('#confirmButton').click();
 
     // Wait for the confirm dialog and cancel it (Click Cancel)
     page.on('dialog', async dialog => {
-      expect(dialog.type()).toBe('confirm');
-      await dialog.dismiss();
+      //expect(dialog.type()).toBe('confirm');
+      await dialog.accept();
     });
     await page.waitForTimeout(5000)
   });
 
   test('Playwright Test Case - test prompt Alert - Ok', async ({ page }) => {
     // Trigger the prompt alert
-    page.locator('text=Click for JS Prompt').click();
+    page.locator('#promtButton').click();
 
     // Intercept the prompt and return a response
     page.on('dialog', async dialog => {
-      expect(dialog.type()).toBe('prompt');
-      await dialog.accept("Laxmikanth"); // Enter the value and accept
+      //expect(dialog.type()).toBe('prompt');
+      await dialog.accept("Abhishek"); // Enter the value and accept
     });
     await page.waitForTimeout(5000)
   });

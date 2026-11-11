@@ -14,15 +14,15 @@ test.describe('Calendar Feature', () => {
 
         await page.locator('//a[@href="/web/index.php/leave/viewLeaveModule"]').click()
 
-        //await page.locator('(//div[@class="oxd-date-input"]/input)[1]').fill('2023-10-12')
+        await page.locator('(//div[@class="oxd-date-input"]/input)[1]').fill('2023-10-12')
 
         // const date = moment().format('YYYY-DD-MM') 
 
         // console.log(date)
 
-        const threeDaysBack = moment().subtract(15, 'days').format('YYYY-DD-MM');
+         const threeDaysBack = moment().subtract(3, 'days').format('YYYY-DD-MM');
 
-        console.log(threeDaysBack);
+        // console.log(threeDaysBack);
 
         //await page.locator('(//div[@class="oxd-date-input"]/input)[1]').fill('2026-01-08');
 
@@ -30,7 +30,7 @@ test.describe('Calendar Feature', () => {
 
         const today = moment().format('YYYY-DD-MM');
 
-        console.log(today);
+         console.log(today);
         await page.locator('(//div[@class="oxd-date-input"]/input)[2]').fill(today)
     });
 
